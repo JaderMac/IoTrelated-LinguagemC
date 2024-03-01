@@ -34,6 +34,13 @@ void exercicioQuatro(){
 void exercicioCinco(){
     //Solicitar ao usuário uma quantidade de segundos (unidade de tempo) e imprimir na tela a 
     //quantidade de horas, minutos e segundos que o valor inserido representa.
+    int segundos = 0, horas = 0, minutos = 0;
+    printf("Entre com a quantidade de segundos : ");
+    scanf("%d", &segundos);
+    minutos =  segundos / 60;
+    printf("%d segundos equivalem a %d minutos!\n", segundos, minutos);
+    horas = segundos / 3600;
+    printf("%d segundos equivalem a %d horas!\n", segundos, horas);
 }
 void exercicioSeis(){
     //Solicitar ao usuário três números inteiros e imprimir na tela o menor deles, o maior deles, e a
