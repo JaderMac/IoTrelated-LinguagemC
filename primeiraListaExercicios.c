@@ -45,7 +45,19 @@ void exercicioCinco(){
 void exercicioSeis(){
     //Solicitar ao usuário três números inteiros e imprimir na tela o menor deles, o maior deles, e a
     //média deles.
-
+    int numero[2];
+     for(int i = 0; i <= 2; i++){
+        numero[i] = 0;
+    }
+    int soma = 0;
+    float media = 0.0;
+    for(int i = 0; i <= 2; i++){
+        printf("Entre com um numero\n");
+        numero[i] = scanf("%d", &numero[i]);
+        soma = soma + numero[i];
+    }
+    media = soma / 3;
+    printf("A media dos numeros é : %d", soma);
 }
 void exercicioSete(){
     //Solicitar ao usuário dois valores numéricos inteiros e um caractere de operação (+*-/) e
