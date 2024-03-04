@@ -61,9 +61,26 @@ void exercicioSeis(){
 }
 void exercicioSete(){
     //Solicitar ao usuário dois valores numéricos inteiros e um caractere de operação (+*-/) e
-//realizar a operação informada com os números inseridos, apresentando o resultado na tela.
-
+    //realizar a operação informada com os números inseridos, apresentando o resultado na tela.
+    int numeroUm = 0, numeroDois = 0, resultado = 0;
+    char operacao = ' ';
+    printf("Entre com um numero inteiro : \n");
+    numeroUm = scanf("%d", &numeroUm);
+    printf("Entre com um numero inteiro : \n");
+    numeroDois = scanf("%d", &numeroDois);      
+    printf("Entre com a operação + ou - : \n");
+    operacao = getchar();
+    if(operacao == '+'){
+        resultado = numeroUm + numeroDois;
+        printf("\nO Resultado é %d", resultado);
+    }else if(operacao == '-'){
+        resultado = numeroUm - numeroDois;
+        printf("\nO Resultado é %d", resultado);
+    }else{
+        printf("operação deve ser + ou -.");
+    }
 }
+
 void exercicioOito(){
 // Escrever um programa que, dada uma variável x, temos y de acordo com a seguinte regra:
 // 1. se x é par: y = x / 2
